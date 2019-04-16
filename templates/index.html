@@ -25,7 +25,7 @@
 
       #container
       {
-        width:500px;
+        width:525px;
         height:200px;
         text-align:center;
         background-image:url(http://www.attachmax.com/p/2018/11/best-50-notepad-wallpaper-on-hipwallpaper-notepad-wallpaper-with-regard-to-yellow-notebook-paper-background-600x600.jpg);
@@ -40,8 +40,8 @@
       #todolist
       {
         position:relative;
-        width:500px;
-        margin:27% auto 5% auto;
+        width:525px;
+        margin:30% auto 5% auto;
       }
 
       .lead
@@ -98,7 +98,7 @@
     <div id="todoform">
         <form action="/submit" method="post">
             <input type="text" name="task" placeholder="Task Item" required="required"></input>
-            <input type="text" name="email" placeholder="email" required="required"></input><br>
+            <input type="text" name="email" placeholder="email" required="required"></input>
             <select name="priority" required>
                 <option value=""> Select priority </option>
                 <option value="low">Low</option>
@@ -106,6 +106,9 @@
                 <option value="high">High</option>
             </select><br>
             <input type="submit" value="Add To Do Item"></input>
+        </form>
+        <form action="/clear" method="post">
+            <input type="submit" value="Clear"></input>
         </form>
     </div>
     <div id="todolist">
