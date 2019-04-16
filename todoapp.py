@@ -48,7 +48,7 @@ def create_to_do_list():
 def clear_to_do_list():
     global to_do_tasks
     to_do_tasks = []
-    return redirect(url_for('to_do_form'), code=307)
+    return redirect('/')
 
 
 if __name__ == '__main__':
